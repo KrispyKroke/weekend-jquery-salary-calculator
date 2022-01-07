@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    color: crimson;
+    background-color: limegreen;
+}
+
+#addEmployee {
+    position: relative;
+    margin-top: 10px;
+    border-radius: 30%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    color: crimson;
+    font-family: Trebuchet MS;
+    text-decoration: underline;
+}
+
+#addEmployee:hover {
+    background-color: limegreen;
+    color: crimson;
+}
