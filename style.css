@@ -23,3 +23,23 @@ h2 {
     background-color: limegreen;
     color: crimson;
 }
+
+#tableHeaders {
+    background-color: aqua;
+}
+
+table, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+#emptySpace {
+    color: aqua;
+}
