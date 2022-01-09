@@ -11,4 +11,4 @@ The DOM will show a table which updates when the information of new employees is
 
 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+
