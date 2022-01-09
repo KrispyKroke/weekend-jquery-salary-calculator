@@ -24,6 +24,16 @@ function addEmployee() {
         return;
     // Runs the rest of the code to append employee information in the table on the DOM if all input fields are filled out
     } else {
+        // Calculates totalMonthlyCosts and updates value on the DOM every time an employee is added.  Also implements rounding to two decimal places.
+        totalMonthlyCosts += monthlyCost;
+        let totalMonthlyCostsRounded = totalMonthlyCosts.toFixed(2);
+        totalMonthlyCosts = Number(totalMonthlyCostsRounded);
+        // Turns background-color of the total monthly costs to red if the costs exceed 20000 dollars
+        if(totalMonthlyCosts > 20000) {
+            $('h3').css('background-color', 'red');
+        }
+        $('h3').empty();
+        $('h3').append(`Total Monthly Costs: $${totalMonthlyCosts}`);
         // Empties out input fields
         $('#firstName').val('');
         $('#lastName').val('');
