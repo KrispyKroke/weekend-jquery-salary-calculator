@@ -59,4 +59,11 @@ function addEmployee() {
         $('.deleteButtons').css('background-color', 'aqua');
         $('.deleteButtons').css('color', 'black');
     }
+    // Puts a listener on the deleteButtons class to listen for a click on any of the delete buttons present.  Calls a function to delete that row
+    $('.deleteButtons').on('click', deleteRow);
+}
+
+//Simple deleteRow function which uses event.target to locate which button was pressed. It then finds the row which the button belongs to and removes it
+function deleteRow(event) {
+    $(event.target).closest('tr').remove();
 }
